@@ -57,8 +57,10 @@ void display() {
 
   player.look();
 
-  Utils::drawLight(1.0f, 0.0f, 0.0f);
   Utils::drawRoom();
+  Utils::drawLight(0.0f, 18.0f, 0.0f);
+
+  // std::println("{}", player);
 
   glutSwapBuffers();
 }
@@ -86,8 +88,6 @@ void update(int value) {
 
   glutWarpPointer(gameState->windowSize().X() / 2,
                   gameState->windowSize().Y() / 2);
-
-  gameState->reset();
 
   glutPostRedisplay();
 }

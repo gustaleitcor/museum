@@ -3,6 +3,7 @@
 #include "include/game/State.hpp"
 #include <GL/freeglut_std.h>
 #include <GL/glut.h>
+#include <print>
 
 void Game::State::update() {
   if (isSpecialPressed(Key::Special::F11)) {
@@ -59,6 +60,18 @@ void Game::State::keyboardCallback(unsigned char key, int x, int y) {
 
 void Game::State::keyboardUpCallback(unsigned char key, int x, int y) {
   getInstance()->m_asciiKeys[key] = false;
+
+  std::println("Key released: {}", key);
+
+  if (key >= 'a' && key <= 'z') {
+    getInstance()->m_asciiKeys[key - ('a' - 'A')] = false;
+  } else if (key >= 'A' && key <= 'Z') {
+    getInstance()->m_asciiKeys[key + ('a' - 'A')] = false;
+  } else if (key == 0) {
+    getInstance()->m_asciiKeys[32] = false;
+  } else if (key == 32) {
+    getInstance()->m_asciiKeys[0] = false;
+  }
 }
 
 void Game::State::specialCallback(int key, int x, int y) {

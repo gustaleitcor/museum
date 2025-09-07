@@ -33,33 +33,37 @@ void Player::update() {
 
   if (m_gameState->isKeyPressed('w')) {
     m_pos += m_front * m_movementSpeed;
-  }
-  if (m_gameState->isKeyPressed('s')) {
-    m_pos -= m_front * m_movementSpeed;
-  }
-  if (m_gameState->isKeyPressed('a')) {
-    m_pos -= m_right * m_movementSpeed;
-  }
-  if (m_gameState->isKeyPressed('d')) {
-    m_pos += m_right * m_movementSpeed;
-  }
-
-  if (m_gameState->isKeyPressed('W')) {
+  } else if (m_gameState->isKeyPressed('W')) {
     m_pos += m_front * m_movementSpeed * 4;
   }
-  if (m_gameState->isKeyPressed('S')) {
+
+  if (m_gameState->isKeyPressed('s')) {
+    m_pos -= m_front * m_movementSpeed;
+  } else if (m_gameState->isKeyPressed('S')) {
     m_pos -= m_front * m_movementSpeed * 4;
   }
-  if (m_gameState->isKeyPressed('A')) {
+
+  if (m_gameState->isKeyPressed('a')) {
+    m_pos -= m_right * m_movementSpeed;
+  } else if (m_gameState->isKeyPressed('A')) {
     m_pos -= m_right * m_movementSpeed * 4;
   }
-  if (m_gameState->isKeyPressed('D')) {
+
+  if (m_gameState->isKeyPressed('d')) {
+    m_pos += m_right * m_movementSpeed;
+  } else if (m_gameState->isKeyPressed('D')) {
     m_pos += m_right * m_movementSpeed * 4;
   }
 
-  if (m_pos.Y() < 1.5f) {
-    m_pos.mut_Y() = 1.5f;
+  if (m_gameState->isKeyPressed(32)) {
+    m_pos.mut_Y() += m_movementSpeed;
+  } else if (m_gameState->isKeyPressed(0)) {
+    m_pos.mut_Y() -= m_movementSpeed;
   }
+
+  // if (m_pos.Y() < 1.5f) {
+  //   m_pos.mut_Y() = 1.5f;
+  // }
 }
 
 void Player::reset() {
