@@ -3,20 +3,23 @@
 #include "include/game/State.hpp"
 #include <GL/freeglut_std.h>
 #include <GL/glut.h>
-#include <print>
 
 void Game::State::update() {
-  if (isSpecialPressed(Key::Special::F11)) {
-    int currentWidth = glutGet(GLUT_WINDOW_WIDTH);
-    int currentHeight = glutGet(GLUT_WINDOW_HEIGHT);
-    int screenWidth = glutGet(GLUT_SCREEN_WIDTH);
-    int screenHeight = glutGet(GLUT_SCREEN_HEIGHT);
+  static bool F11_toggled = false;
 
-    if (currentWidth == screenWidth && currentHeight == screenHeight) {
-      glutReshapeWindow(800, 600);
-    } else {
-      glutFullScreen();
+  if (isSpecialPressed(Key::Special::F11)) {
+    if (!F11_toggled) {
+      m_isFullScreen = !m_isFullScreen;
+      if (m_isFullScreen) {
+        glutFullScreen();
+      } else {
+        glutReshapeWindow(800, 600);
+      }
+
+      F11_toggled = true;
     }
+  } else {
+    F11_toggled = false;
   }
 
   if (isKeyPressed((char)27)) {
@@ -27,31 +30,22 @@ void Game::State::update() {
 void Game::State::reset() {
   m_mouseDelta = {0, 0};
 
+  m_isFullScreen = false;
+
   for (int i = 0; i < 256; ++i) {
     m_asciiKeys[i] = false;
     m_specialKeys[i] = false;
   }
 }
 
-void Game::State::registerCallbacks() {
-  glutMouseFunc([](int button, int state, int x, int y) {
-    if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-      getInstance()->m_lastMousePos = {x, y};
-    }
-  });
-  glutMotionFunc(mouseCallback);
-  glutPassiveMotionFunc(mouseCallback);
-  glutKeyboardFunc(keyboardCallback);
-  glutKeyboardUpFunc(keyboardUpCallback);
-  glutSpecialFunc(specialCallback);
-  glutSpecialUpFunc(specialUpCallback);
+void Game::State::mouseCallback(int button, int state, int x, int y) {
+  // TODO
 }
 
-void Game::State::mouseCallback(GLint x, GLint y) {
+void Game::State::mouseMotionCallback(GLint x, GLint y) {
   auto instance = getInstance();
   instance->m_mouseDelta = {x - instance->m_windowSize.X() / 2,
                             y - instance->m_windowSize.Y() / 2};
-  instance->m_lastMousePos = {x, y};
 }
 
 void Game::State::keyboardCallback(unsigned char key, int x, int y) {
@@ -60,8 +54,6 @@ void Game::State::keyboardCallback(unsigned char key, int x, int y) {
 
 void Game::State::keyboardUpCallback(unsigned char key, int x, int y) {
   getInstance()->m_asciiKeys[key] = false;
-
-  std::println("Key released: {}", key);
 
   if (key >= 'a' && key <= 'z') {
     getInstance()->m_asciiKeys[key - ('a' - 'A')] = false;

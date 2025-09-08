@@ -1,4 +1,4 @@
-source = files('main.cpp')
+source = files('main.cpp', 'config.hpp')
 
 subdir('models')
 subdir('utils')

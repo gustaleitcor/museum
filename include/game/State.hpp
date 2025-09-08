@@ -55,11 +55,10 @@ public:
   // Resets game state.
   void reset();
 
-  // Registers GLUT callbacks.
-  void registerCallbacks();
-
+  // Mouse button callback.
+  static void mouseCallback(int button, int state, int x, int y);
   // Mouse motion callback.
-  static void mouseCallback(GLint x, GLint y);
+  static void mouseMotionCallback(GLint x, GLint y);
   // ASCII key press callback.
   static void keyboardCallback(unsigned char key, int x, int y);
   // ASCII key release callback.
@@ -85,11 +84,11 @@ private:
   State &operator=(const State &) = delete;
 
   Utils::Vector2<int> m_mouseDelta;
-  Utils::Vector2<int> m_lastMousePos;
 
   bool m_asciiKeys[256];
   bool m_specialKeys[256];
 
   Utils::Vector2<int> m_windowSize;
+  bool m_isFullScreen;
 };
 } // namespace Game

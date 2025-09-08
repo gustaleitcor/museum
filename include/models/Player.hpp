@@ -30,9 +30,7 @@ private:
   Utils::Vector3<GLfloat> m_up;
   Utils::Vector3<GLfloat> m_right;
   Utils::Vector3<GLfloat> m_worldUp;
-
-  GLfloat m_yaw;
-  GLfloat m_pitch;
+  Utils::Vector3<GLfloat> m_viewAngle;
 
   GLfloat m_movementSpeed;
   GLfloat m_mouseSensitivity;
