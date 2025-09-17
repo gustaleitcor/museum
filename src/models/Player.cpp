@@ -60,9 +60,9 @@ void Player::update() {
     m_pos.mut_Y() -= m_movementSpeed;
   }
 
-  if (m_pos.Y() < 1.5f) {
-    m_pos.mut_Y() = 1.5f;
-  }
+  // if (m_pos.Y() < 1.5f) {
+  //   m_pos.mut_Y() = 1.5f;
+  // }
 }
 
 void Player::reset() {

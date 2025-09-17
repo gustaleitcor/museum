@@ -41,6 +41,7 @@ int main(int argc, char **argv) {
 
   // LIGHTING
   glEnable(GL_LIGHTING);
+  glEnable(GL_DEPTH_TEST);
 
   // CAMERA
   gluPerspective(60.0, 1.0 / 1.0, 1.0, 100.0);
@@ -62,9 +63,9 @@ void display() {
   player.look();
 
   Models::Scene::drawRoom(0.0f, 0.0f, 0.0f, 20, 20, GL_LIGHT0);
-  Models::Scene::drawRoom(20.0f, 0.0f, 0.0f, 20, 20, GL_LIGHT1);
-  Models::Scene::drawRoom(0.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT2);
-  Models::Scene::drawRoom(20.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT3);
+  // Models::Scene::drawRoom(20.0f, 0.0f, 0.0f, 20, 20, GL_LIGHT1);
+  // Models::Scene::drawRoom(0.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT2);
+  // Models::Scene::drawRoom(20.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT3);
 
   glutSwapBuffers();
 }
@@ -73,6 +74,7 @@ void display() {
 void update(int value) {
   gameState->update();
   player.update();
+  std::println("player: {}", player);
 
   glutWarpPointer(gameState->windowSize().X() / 2,
                   gameState->windowSize().Y() / 2);
