@@ -4,10 +4,6 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "include/utils/stb_image.hpp"
 
-#define INITIAL_WINDOW_WIDTH 800
-#define INITIAL_WINDOW_HEIGHT 600
-#define FPS_TARGET 60.0f
-
 // TODO: FIND A BETTER PLACE TO LOAD TEXTURE
 // Loads an image and creates an OpenGL 2D texture.
 static GLuint texName = 0;
