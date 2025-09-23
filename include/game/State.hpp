@@ -5,6 +5,8 @@
 #include <GL/gl.h>
 #include <memory>
 
+#define MAX_TEXTURES 4
+
 // Namespace for key-related definitions.
 namespace Key {
 // Enum to map GLUT special key codes.
@@ -50,10 +52,14 @@ public:
   inline const Utils::Vector2<int> &windowSize() const { return m_windowSize; }
   inline Utils::Vector2<int> &mut_windowSize() { return m_windowSize; }
 
+  inline const GLuint texture(int i) const { return m_texIds[i]; }
+
   // Updates game state.
   void update();
   // Resets game state.
   void reset();
+  // Load texture
+  void load_texture();
 
   // Mouse button callback.
   static void mouseCallback(int button, int state, int x, int y);
@@ -90,5 +96,7 @@ private:
 
   Utils::Vector2<int> m_windowSize;
   bool m_isFullScreen;
+
+  GLuint m_texIds[MAX_TEXTURES] = {0};
 };
 } // namespace Game

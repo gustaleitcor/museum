@@ -1,7 +1,6 @@
 // Player class implementation.
 
 #include "include/models/Player.hpp"
-#include "include/utils/Vector3.hpp"
 #include <GL/glu.h>
 #include <algorithm>
 #include <cmath>

@@ -3,6 +3,12 @@
 #include "include/game/State.hpp"
 #include <GL/freeglut_std.h>
 #include <GL/glut.h>
+#include <format>
+#include <iostream>
+#include <string>
+
+#define STB_IMAGE_IMPLEMENTATION
+#include "include/utils/stb_image.hpp"
 
 void Game::State::update() {
   static bool F11_toggled = false;
@@ -74,4 +80,45 @@ void Game::State::specialUpCallback(int key, int x, int y) {
   getInstance()->m_specialKeys[key] = false;
 }
 
-Game::State::State() { reset(); }
+Game::State::State() {
+  reset();
+}
+
+void Game::State::load_texture() {
+  glGenTextures(MAX_TEXTURES, m_texIds);
+
+  for (int i = 0; i < MAX_TEXTURES; i++) {
+    int width, height, nrChannels;
+    std::string image_path = std::format("assets/textures/{}.png", i + 1);
+    unsigned char *data =
+        stbi_load(image_path.c_str(), &width, &height, &nrChannels, 0);
+
+    if (data) {
+      glBindTexture(GL_TEXTURE_2D, m_texIds[i]);
+
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,
+                      GL_LINEAR_MIPMAP_LINEAR);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+      if (nrChannels == 3) {
+        gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, width, height, GL_RGB,
+                          GL_UNSIGNED_BYTE, data);
+      } else if (nrChannels == 4) {
+        gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGBA, width, height, GL_RGBA,
+                          GL_UNSIGNED_BYTE, data);
+      } else {
+        std::cout << std::format("Unsupported texture format: {} channels",
+                                 nrChannels)
+                  << std::endl;
+      }
+
+      stbi_image_free(data);
+    } else {
+      std::cout << std::format("Failed to load texture: {}", image_path)
+                << std::endl;
+    }
+  }
+}

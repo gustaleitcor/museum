@@ -1,4 +1,3 @@
-#include "config.hpp"
 #include "include/game/State.hpp"
 #include "include/models/Objects.hpp"
 #include "include/models/Player.hpp"
@@ -42,6 +41,8 @@ int main(int argc, char **argv) {
   glutSpecialFunc(Game::State::specialCallback);
   glutSpecialUpFunc(Game::State::specialUpCallback);
 
+  gameState->load_texture();
+
   // HIDE CURSOR
   glutSetCursor(GLUT_CURSOR_NONE);
 
@@ -50,7 +51,7 @@ int main(int argc, char **argv) {
   glEnable(GL_DEPTH_TEST);
   glEnable(GL_COLOR_MATERIAL);
   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-  
+
   GLfloat light_ambient[] = {0.3, 0.3, 0.3, 1.0};
   // GLfloat light_diffuse[] = {0.6, 0.6, 0.6, 1.0};
   // GLfloat light_specular[] = {0.6, 0.6, 0.6, 1.0};
@@ -65,9 +66,6 @@ int main(int argc, char **argv) {
 
   // CAMERA
   gluPerspective(60.0, 1.0 / 1.0, 1.0, 300.0);
-
-  // LOAD TEXTURE (TODO: FIND A BETTER PLACE)
-  loadTexture("./assets/wall_texture.png");
 
   // FPS TIMER
   glutTimerFunc(1000.0 / FPS_TARGET, update, 0);
@@ -87,32 +85,36 @@ void display() {
   // Models::Objects::drawLight(0.0, 10, 0.0, GL_LIGHT0);
   // printf("Maximum number of lights supported: %d\n", maxLights);
 
-  Models::Objects::drawFrame(0.0f, 5.0f, 0.0f, 2, 2, 3);
-  //Corredor horizontal superior
-  int i =0;
-  for (int i =0; i < HALL_LENGTH; i++){
-    Models::Scene::drawHallway(30.0 + 30*i, 0.0, 0.0, 30, 25, HORIZONTAL);
+  Models::Objects::drawFrame(0.0f, 3.0f, 0.0f, 3, 4,  gameState->texture(3));
+  // Models::Objects::drawPlaneFlat(0.0f, 5.0f, 0.0f, 5, 5, 0, gameState->texture(0));
+  // Corredor horizontal superior
+  int i = 0;
+  for (int i = 0; i < HALL_LENGTH; i++) {
+    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 0.0, 30, 25, HORIZONTAL);
   }
   // Canto superior esquerdo  |-
   Models::Scene::drawCorner(0.0f, 0.0f, 0.0f, 30, 25, UPPER_LEFT);
   // Corredor vertical esquerdo
-  for (i =0; i < HALL_LENGTH; i++){
-    Models::Scene::drawHallway(0.0, 0.0, 30.0 + 30*i, 30, 25, VERTICAL);
+  for (i = 0; i < HALL_LENGTH; i++) {
+    Models::Scene::drawHallway(0.0, 0.0, 30.0 + 30 * i, 30, 25, VERTICAL);
   }
   // Canto inferior esquerdo
-  Models::Scene::drawCorner(0.0f, 0.0f, 30.0 + 30*i, 30, 25, BOTTOM_LEFT);
+  Models::Scene::drawCorner(0.0f, 0.0f, 30.0 + 30 * i, 30, 25, BOTTOM_LEFT);
   // Canto superior direito
-  Models::Scene::drawCorner(30.0 + 30*i, 0.0f, 0.0f, 30, 25, UPPER_RIGHT);
+  Models::Scene::drawCorner(30.0 + 30 * i, 0.0f, 0.0f, 30, 25, UPPER_RIGHT);
   // Corredor vertical direito
-  int j =0;
-  for (j =0; j < HALL_LENGTH; j++){
-    Models::Scene::drawHallway(30.0 + 30*i, 0.0, 30.0 + 30*j, 30, 25, VERTICAL);
+  int j = 0;
+  for (j = 0; j < HALL_LENGTH; j++) {
+    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 30.0 + 30 * j, 30, 25,
+                               VERTICAL);
   }
   // Canto inferior direito
-  Models::Scene::drawCorner(30.0 + 30*i, 0.0f, 30.0 + 30*j, 30, 25, BOTTOM_RIGHT);
+  Models::Scene::drawCorner(30.0 + 30 * i, 0.0f, 30.0 + 30 * j, 30, 25,
+                            BOTTOM_RIGHT);
   // Corredor horizontal inferior
-  for (i =0; i < HALL_LENGTH; i++){
-    Models::Scene::drawHallway(30.0 + 30*i, 0.0, 30.0 + 30*j, 30, 25, HORIZONTAL);
+  for (i = 0; i < HALL_LENGTH; i++) {
+    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 30.0 + 30 * j, 30, 25,
+                               HORIZONTAL);
   }
   // Models::Scene::drawRoom(20.0f, 0.0f, 0.0f, 20, 20, GL_LIGHT1);
   // Models::Scene::drawRoom(0.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT2);
@@ -125,7 +127,7 @@ void display() {
 void update(int value) {
   gameState->update();
   player.update();
-  std::println("player: {}", player);
+  // std::println("player: {}", player);
 
   glutWarpPointer(gameState->windowSize().X() / 2,
                   gameState->windowSize().Y() / 2);

@@ -1,6 +1,9 @@
 #include "include/models/Objects.hpp"
+#include "include/game/State.hpp"
 #include <GL/freeglut_std.h>
 #include <GL/gl.h>
+
+static std::shared_ptr<Game::State> gameState = Game::State::getInstance();
 
 void Models::Objects::drawLight(GLfloat x_0, GLfloat y_0, GLfloat z_0,
                                 int lightName) {
@@ -34,83 +37,164 @@ void Models::Objects::drawLight(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glLightfv(lightName, GL_POSITION, light_position);
 }
 
-// void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-//                                 GLfloat x, GLfloat y, GLfloat z) {
-//   glBegin(GL_QUADS);
-//   glTexCoord2f(0.0f, 0.0f);
-//   glVertex3f(x_0, y_0, z_0);
+void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat x, GLfloat y, GLfloat z, GLuint texture) {
 
-//   glTexCoord2f(0.0f, 1.0f);
-//   glVertex3f(x_0 + x, y_0, z_0);
+  glColor3f(1.0f, 1.0f, 1.0f);
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, texture);
+  glBegin(GL_QUADS);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(x_0, y_0, z_0);
 
-//   glTexCoord2f(1.0f, 1.0f);
-//   glVertex3f(x_0 + x, y_0 + y, z_0 + z);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(x_0 + x, y_0, z_0);
 
-//   glTexCoord2f(1.0f, 0.0f);
-//   glVertex3f(x_0, y_0 + y, z_0 + z);
-//   glEnd();
-// }
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(x_0 + x, y_0 + y, z_0 + z);
+
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(x_0, y_0 + y, z_0 + z);
+  glEnd();
+  glDisable(GL_TEXTURE_2D);
+}
 
 // multiple quads
 void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-                                GLfloat x, GLfloat y, GLfloat z) {
-    int nx = 20; // number of quads along x
-    int ny = 20; // number of quads along y
-    // glNormal3f(0, 1, 0);
-    GLfloat dx = x / nx;
-    GLfloat dy = y / ny;
-    GLfloat dz = z / ny;  // since z is coupled with y in your original code
+                                GLfloat x, GLfloat y, GLfloat z,
+                                GLuint texture) {
+  int nx = 20; // number of quads along x
+  int ny = 20; // number of quads along y
+  // glNormal3f(0, 1, 0);
+  GLfloat dx = x / nx;
+  GLfloat dy = y / ny;
+  GLfloat dz = z / ny; // since z is coupled with y in your original code
 
-    GLfloat dtx = 1.0f / nx;
-    GLfloat dty = 1.0f / ny;
+  GLfloat dtx = 1.0f / nx;
+  GLfloat dty = 1.0f / ny;
 
-    for (int i = 0; i < nx; i++) {
-        for (int j = 0; j < ny; j++) {
-            GLfloat x1 = x_0 + i * dx;
-            GLfloat y1 = y_0 + j * dy;
-            GLfloat z1 = z_0 + j * dz;
+  // int range_x = 10;
+  // int range_y = 10;
+  // double chosen_x = (rand() % range_x) - range_x/2.0;
+  // double chosen_y = (rand() % range_y) - range_y/2.0;
+  // std::cout << "Chosen: (" << chosen_x << "," << chosen_y <<")\n";
+  drawFrame(2, 5, -7.4, 3, 5, gameState->texture(2));
 
-            GLfloat x2 = x_0 + (i + 1) * dx;
-            GLfloat y2 = y_0 + (j + 1) * dy;
-            GLfloat z2 = z_0 + (j + 1) * dz;
+  for (int i = 0; i < nx; i++) {
+    for (int j = 0; j < ny; j++) {
+      GLfloat x1 = x_0 + i * dx;
+      GLfloat y1 = y_0 + j * dy;
+      GLfloat z1 = z_0 + j * dz;
 
-            GLfloat s1 = i * dtx;
-            GLfloat t1 = j * dty;
-            GLfloat s2 = (i + 1) * dtx;
-            GLfloat t2 = (j + 1) * dty;
+      GLfloat x2 = x_0 + (i + 1) * dx;
+      GLfloat y2 = y_0 + (j + 1) * dy;
+      GLfloat z2 = z_0 + (j + 1) * dz;
 
-            glBegin(GL_QUADS);
-                glTexCoord2f(s1, t1);
-                glVertex3f(x1, y1, z1);
+      GLfloat s1 = i * dtx;
+      GLfloat t1 = j * dty;
+      GLfloat s2 = (i + 1) * dtx;
+      GLfloat t2 = (j + 1) * dty;
 
-                glTexCoord2f(s2, t1);
-                glVertex3f(x2, y1, z1);
+      glEnable(GL_TEXTURE_2D);
+      glBindTexture(GL_TEXTURE_2D, texture);
+      glBegin(GL_QUADS);
+      glTexCoord2f(s1, t1);
+      glVertex3f(x1, y1, z1);
 
-                glTexCoord2f(s2, t2);
-                glVertex3f(x2, y2, z2);
+      glTexCoord2f(s2, t1);
+      glVertex3f(x2, y1, z1);
 
-                glTexCoord2f(s1, t2);
-                glVertex3f(x1, y2, z2);
-            glEnd();
-        }
+      glTexCoord2f(s2, t2);
+      glVertex3f(x2, y2, z2);
+
+      glTexCoord2f(s1, t2);
+      glVertex3f(x1, y2, z2);
+      glEnd();
+      glDisable(GL_TEXTURE_2D);
     }
+  }
 }
 
-void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat w, GLfloat scale_x, GLfloat scale_y)
-{
-
+void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
+                                GLfloat w, GLfloat h, GLuint texture_photo) {
 
   glPushMatrix();
   glTranslatef(x_0, y_0, z_0);
-  glColor3f(137/255.0, 81/255.0, 41/255.0);
-  glScalef (scale_x, scale_y, 0.2);
-  glutSolidCube(w);
-  glColor3f(0.0f, 1.0f, 0.0f);
-  glTranslatef(0.0, 0.0, 0.5);
+  float border_width = w*0.1;
+  float border_incline = 0.25;
+  // Foto
+  drawPlaneFlat(x_0, y_0, z_0, w, h, 0, texture_photo);
+
+  // Borda superior
+  drawPlaneFlat(x_0, y_0 + h, z_0, w, border_width, border_incline, gameState->texture(1));
+
+  // Borda esquerda
+  glPushMatrix();
+  // glRotatef(45, 0, 1, 0);
+  drawPlaneFlat(x_0 - border_width, y_0, z_0, border_width, h, 0, gameState->texture(1));
+  glPopMatrix();
+
+  // Canto superior esquerdo
   glEnable(GL_TEXTURE_2D);
-  glutSolidCube(w*0.9);
+  glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
+  glBegin(GL_TRIANGLES);
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(x_0 - 0.707*border_width, y_0+h, z_0+0.707*border_width);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(x_0, y_0+h, z_0);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(x_0, y_0+h+border_width, z_0+border_incline);
+  glEnd();
   glDisable(GL_TEXTURE_2D);
+
+  // Borda inferior
+  drawPlaneFlat(x_0, y_0-border_width, z_0+border_incline, w, border_width, -border_incline, gameState->texture(1));
+  // Canto superior direito
+  // Borda direita
+  glPushMatrix();
+  glTranslatef(w, 0, 0);
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
+  glBegin(GL_TRIANGLES);
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(x_0 + 0.707*border_width, y_0+h, z_0+0.707*border_width);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(x_0, y_0+h, z_0);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(x_0, y_0+h+border_width, z_0+border_incline);
+  glEnd();
+  glDisable(GL_TEXTURE_2D);
+  // glRotatef(-45, 0, 1, 0);
+  drawPlaneFlat(x_0, y_0, z_0, border_width, h, 0, gameState->texture(1));
+  glPopMatrix();
+
+  // Canto inferior esquerdo
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
+  glBegin(GL_TRIANGLES);
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(x_0, y_0 - border_width, z_0 + border_incline);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(x_0 - border_width*0.707, y_0, z_0 + 0.707*border_width);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(x_0, y_0, z_0);
+  glEnd();
+  glDisable(GL_TEXTURE_2D);
+
+  // Canto inferior direito
+  glPushMatrix();
+  glTranslatef(w, 0, 0);
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
+  glBegin(GL_TRIANGLES);
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(x_0, y_0 - border_width, z_0 + border_incline);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(x_0 + border_width*0.707, y_0, z_0 + 0.707*border_width);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(x_0, y_0, z_0);
+  glEnd();
+  glDisable(GL_TEXTURE_2D);
+  glPopMatrix();
 
   glPopMatrix();
 }
-
