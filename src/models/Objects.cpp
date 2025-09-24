@@ -72,13 +72,6 @@ void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   GLfloat dtx = 1.0f / nx;
   GLfloat dty = 1.0f / ny;
 
-  // int range_x = 10;
-  // int range_y = 10;
-  // double chosen_x = (rand() % range_x) - range_x/2.0;
-  // double chosen_y = (rand() % range_y) - range_y/2.0;
-  // std::cout << "Chosen: (" << chosen_x << "," << chosen_y <<")\n";
-  drawFrame(2, 5, -7.4, 3, 5, gameState->texture(2));
-
   for (int i = 0; i < nx; i++) {
     for (int j = 0; j < ny; j++) {
       GLfloat x1 = x_0 + i * dx;
@@ -122,15 +115,15 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   float border_width = w*0.1;
   float border_incline = 0.25;
   // Foto
-  drawPlaneFlat(x_0, y_0, z_0, w, h, 0, texture_photo);
+  drawPlaneFlat(0, 0, 0, w, h, 0, texture_photo);
 
   // Borda superior
-  drawPlaneFlat(x_0, y_0 + h, z_0, w, border_width, border_incline, gameState->texture(1));
+  drawPlaneFlat(0, h, 0, w, border_width, border_incline, gameState->texture(1));
 
   // Borda esquerda
   glPushMatrix();
-  // glRotatef(45, 0, 1, 0);
-  drawPlaneFlat(x_0 - border_width, y_0, z_0, border_width, h, 0, gameState->texture(1));
+  glRotatef(45, 0, 1, 0);
+  drawPlaneFlat(-border_width, 0, 0, border_width, h, 0, gameState->texture(1));
   glPopMatrix();
 
   // Canto superior esquerdo
@@ -138,16 +131,16 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(x_0 - 0.707*border_width, y_0+h, z_0+0.707*border_width);
+  glVertex3f(-0.707*border_width, h, 0.707*border_width);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(x_0, y_0+h, z_0);
+  glVertex3f(0, h, 0);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(x_0, y_0+h+border_width, z_0+border_incline);
+  glVertex3f(0, h+border_width, border_incline);
   glEnd();
   glDisable(GL_TEXTURE_2D);
 
   // Borda inferior
-  drawPlaneFlat(x_0, y_0-border_width, z_0+border_incline, w, border_width, -border_incline, gameState->texture(1));
+  drawPlaneFlat(0, -border_width, border_incline, w, border_width, -border_incline, gameState->texture(1));
   // Canto superior direito
   // Borda direita
   glPushMatrix();
@@ -156,15 +149,15 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(x_0 + 0.707*border_width, y_0+h, z_0+0.707*border_width);
+  glVertex3f(0.707*border_width, h, 0.707*border_width);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(x_0, y_0+h, z_0);
+  glVertex3f(0, h, 0);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(x_0, y_0+h+border_width, z_0+border_incline);
+  glVertex3f(0, h+border_width, border_incline);
   glEnd();
   glDisable(GL_TEXTURE_2D);
-  // glRotatef(-45, 0, 1, 0);
-  drawPlaneFlat(x_0, y_0, z_0, border_width, h, 0, gameState->texture(1));
+  glRotatef(-45, 0, 1, 0);
+  drawPlaneFlat(0, 0, 0, border_width, h, 0, gameState->texture(1));
   glPopMatrix();
 
   // Canto inferior esquerdo
@@ -172,11 +165,11 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(x_0, y_0 - border_width, z_0 + border_incline);
+  glVertex3f(0, -border_width, border_incline);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(x_0 - border_width*0.707, y_0, z_0 + 0.707*border_width);
+  glVertex3f(-0.707*border_width, 0, 0.707*border_width);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(x_0, y_0, z_0);
+  glVertex3f(0, 0, 0);
   glEnd();
   glDisable(GL_TEXTURE_2D);
 
@@ -187,11 +180,11 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(x_0, y_0 - border_width, z_0 + border_incline);
+  glVertex3f(0, -border_width, border_incline);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(x_0 + border_width*0.707, y_0, z_0 + 0.707*border_width);
+  glVertex3f(0.707*border_width, 0,  0.707*border_width);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(x_0, y_0, z_0);
+  glVertex3f(0, 0, 0);
   glEnd();
   glDisable(GL_TEXTURE_2D);
   glPopMatrix();

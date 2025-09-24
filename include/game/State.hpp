@@ -4,8 +4,14 @@
 #include <GL/freeglut_std.h>
 #include <GL/gl.h>
 #include <memory>
+#include <random>
+#include <string>
+#include <curl/curl.h>
+#include "include/utils/json.hpp"
+#include <vector>
+#include <limits>
 
-#define MAX_TEXTURES 4
+#define MAX_TEXTURES 7
 
 // Namespace for key-related definitions.
 namespace Key {
@@ -53,6 +59,11 @@ public:
   inline Utils::Vector2<int> &mut_windowSize() { return m_windowSize; }
 
   inline const GLuint texture(int i) const { return m_texIds[i]; }
+  inline const GLuint photo(int i) const {
+     if(i < 24)
+        return m_photosIds[i];
+     else return -1; 
+  }
 
   // Updates game state.
   void update();
@@ -60,6 +71,7 @@ public:
   void reset();
   // Load texture
   void load_texture();
+  void load_photos(bool side);
 
   // Mouse button callback.
   static void mouseCallback(int button, int state, int x, int y);
@@ -83,11 +95,31 @@ public:
   inline bool isSpecialPressed(Key::Special key) const {
     return m_specialKeys[key];
   }
+  inline const uint random_number_left(int max)
+  {
+    return (gen_left() % (max + 1));
+  }
+  inline const int random_number_right(int max)
+  {
+    return (gen_right() % (max + 1));
+  }
 
 private:
   State();
   State(const State &) = delete;
   State &operator=(const State &) = delete;
+
+  //escreve dados no vetor contents
+  static size_t memory_writeCb(void* contents, size_t size, size_t nmemb, void* userp);
+  static size_t curl_imageCb(void* contents, size_t size, size_t nmemb, void* userp);
+  //realiza get e pega a string de resposta
+  static bool http_get(const std::string& url, std::string& out);
+  //coloca a imagem em um vector
+  static bool download_image(const std::string& url, std::vector<uint8_t>& buffer);
+  bool get_images(std::vector<std::vector<uint8_t>>& images_data, int random_page);
+
+  std::mt19937 gen_left, gen_right;
+  uint seed_left = 0, seed_right = std::numeric_limits<uint>::max()/2;
 
   Utils::Vector2<int> m_mouseDelta;
 
@@ -98,5 +130,7 @@ private:
   bool m_isFullScreen;
 
   GLuint m_texIds[MAX_TEXTURES] = {0};
+  //TODO: DEFINE HALLWAY LENGTH
+  GLuint m_photosIds[24] = {0};
 };
 } // namespace Game

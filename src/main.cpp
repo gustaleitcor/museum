@@ -8,11 +8,14 @@
 #include <GL/glut.h>
 #include <memory>
 #include <iostream>
+#include <print>
 
 #define HALL_LENGTH 6
+#define ROOM_WIDTH 30
+#define ROOM_HEIGHT 25
 #define INITIAL_WINDOW_WIDTH 800
 #define INITIAL_WINDOW_HEIGHT 600
-#define FPS_TARGET 60.0f
+#define FPS_TARGET 60.0
 
 static std::shared_ptr<Game::State> gameState = Game::State::getInstance();
 static Models::Player player;
@@ -24,6 +27,9 @@ void update(int value);
 
 // Main entry point.
 int main(int argc, char **argv) {
+  // srand(1);
+
+
   // INITIAL CONFIG
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
@@ -55,6 +61,7 @@ int main(int argc, char **argv) {
   GLfloat light_ambient[] = {0.3, 0.3, 0.3, 1.0};
   // GLfloat light_diffuse[] = {0.6, 0.6, 0.6, 1.0};
   // GLfloat light_specular[] = {0.6, 0.6, 0.6, 1.0};
+  //APENAS LUZ DIRECIONAL VINDO DE CIMA
   GLfloat light_position[] = {0.0, 1.0, 0.0, 0.0};
 
   glLightfv(GL_LIGHT7, GL_AMBIENT, light_ambient);
@@ -70,6 +77,14 @@ int main(int argc, char **argv) {
   // FPS TIMER
   glutTimerFunc(1000.0 / FPS_TARGET, update, 0);
 
+  // std::vector<std::vector<uint8_t>> images;
+  // gameState->get_images(images, 1);
+  gameState->reset();
+  gameState->load_photos(0);
+  std::cout << "### LOAD 0 OK ###\n";
+  gameState->load_photos(1);
+  std::cout << "### LOAD 1 OK ###\n";
+  // exit(1);
   glutMainLoop();
   return 0;
 }
@@ -85,41 +100,43 @@ void display() {
   // Models::Objects::drawLight(0.0, 10, 0.0, GL_LIGHT0);
   // printf("Maximum number of lights supported: %d\n", maxLights);
 
-  Models::Objects::drawFrame(0.0f, 3.0f, 0.0f, 3, 4,  gameState->texture(3));
-  // Models::Objects::drawPlaneFlat(0.0f, 5.0f, 0.0f, 5, 5, 0, gameState->texture(0));
+  // Models::Objects::drawFrame(0.0, 3.0f, 0.0, 3, 4,  gameState->texture(3));
+  // Models::Objects::drawPlaneFlat(0.0, 5.0f, 0.0, 5, 5, 0, gameState->texture(0));
   // Corredor horizontal superior
-  int i = 0;
+  int count = 0;
   for (int i = 0; i < HALL_LENGTH; i++) {
-    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 0.0, 30, 25, HORIZONTAL);
+    Models::Scene::drawHallway(ROOM_WIDTH + ROOM_WIDTH * i, 0.0, 0.0, ROOM_WIDTH, ROOM_HEIGHT, HORIZONTAL, count);
+    count++;
   }
   // Canto superior esquerdo  |-
-  Models::Scene::drawCorner(0.0f, 0.0f, 0.0f, 30, 25, UPPER_LEFT);
+  Models::Scene::drawCorner(0.0, 0.0, 0.0, ROOM_WIDTH, ROOM_HEIGHT, UPPER_LEFT);
   // Corredor vertical esquerdo
-  for (i = 0; i < HALL_LENGTH; i++) {
-    Models::Scene::drawHallway(0.0, 0.0, 30.0 + 30 * i, 30, 25, VERTICAL);
+  for (int i = 0; i < HALL_LENGTH; i++) {
+    Models::Scene::drawHallway(0.0, 0.0, ROOM_WIDTH + ROOM_WIDTH * i, ROOM_WIDTH, ROOM_HEIGHT, VERTICAL, count);
+    count++;
   }
   // Canto inferior esquerdo
-  Models::Scene::drawCorner(0.0f, 0.0f, 30.0 + 30 * i, 30, 25, BOTTOM_LEFT);
+  Models::Scene::drawCorner(0.0, 0.0, ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, ROOM_WIDTH, ROOM_HEIGHT, BOTTOM_LEFT);
   // Canto superior direito
-  Models::Scene::drawCorner(30.0 + 30 * i, 0.0f, 0.0f, 30, 25, UPPER_RIGHT);
+  Models::Scene::drawCorner(ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, 0.0, 0.0, ROOM_WIDTH, ROOM_HEIGHT, UPPER_RIGHT);
   // Corredor vertical direito
-  int j = 0;
-  for (j = 0; j < HALL_LENGTH; j++) {
-    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 30.0 + 30 * j, 30, 25,
-                               VERTICAL);
+  // int j = 0;
+  for (int j = 0; j < HALL_LENGTH; j++) {
+    Models::Scene::drawHallway(ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, 0.0, ROOM_WIDTH + ROOM_WIDTH * j, ROOM_WIDTH, ROOM_HEIGHT, VERTICAL, count);
+    count++;
   }
   // Canto inferior direito
-  Models::Scene::drawCorner(30.0 + 30 * i, 0.0f, 30.0 + 30 * j, 30, 25,
+  Models::Scene::drawCorner(ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, 0.0, ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, ROOM_WIDTH, ROOM_HEIGHT,
                             BOTTOM_RIGHT);
   // Corredor horizontal inferior
-  for (i = 0; i < HALL_LENGTH; i++) {
-    Models::Scene::drawHallway(30.0 + 30 * i, 0.0, 30.0 + 30 * j, 30, 25,
-                               HORIZONTAL);
+  for (int i = 0; i < HALL_LENGTH; i++) {
+    Models::Scene::drawHallway(ROOM_WIDTH + ROOM_WIDTH * i, 0.0, ROOM_WIDTH + ROOM_WIDTH * HALL_LENGTH, ROOM_WIDTH, ROOM_HEIGHT, HORIZONTAL, count);
+    count++;
   }
-  // Models::Scene::drawRoom(20.0f, 0.0f, 0.0f, 20, 20, GL_LIGHT1);
-  // Models::Scene::drawRoom(0.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT2);
-  // Models::Scene::drawRoom(20.0f, 0.0f, 20.0f, 20, 20, GL_LIGHT3);
-
+  // Models::Scene::drawRoom(20.0, 0.0, 0.0, 20, 20, GL_LIGHT1);
+  // Models::Scene::drawRoom(0.0, 0.0, 20.0, 20, 20, GL_LIGHT2);
+  // Models::Scene::drawRoom(20.0, 0.0, 20.0, 20, 20, GL_LIGHT3);
+  gameState->reset();
   glutSwapBuffers();
 }
 
@@ -142,7 +159,7 @@ void reshape(int w, int h) {
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
   gluPerspective(60.0, static_cast<double>(w) / static_cast<double>(h), 1.0,
-                 300.0);
+                 10 * ROOM_WIDTH);
   glMatrixMode(GL_MODELVIEW);
 
   gameState->mut_windowSize() = {w, h};

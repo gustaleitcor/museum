@@ -9,7 +9,7 @@ namespace Models {
 
 Player::Player()
     : m_pos(0.0f, 2.5f, 0.0f), m_worldUp(0.0f, 1.0f, 0.0f),
-      m_viewAngle(0.0f, 0.0f, 0.0f), m_movementSpeed(0.1f),
+      m_viewAngle(0.0f, 0.0f, 0.0f), m_movementSpeed(0.2f),
       m_mouseSensitivity(0.5f) {
   updateVectors();
 }

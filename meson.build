@@ -4,6 +4,7 @@ project('opengl-app', 'cpp', version: '0.1', default_options: ['cpp_std=c++23'])
 opengl = dependency('gl')
 glu = dependency('glu')
 glut = dependency('glut')
+curl = dependency('libcurl', required:true)
 
 subdir('src')
 
@@ -11,6 +12,6 @@ executable(
   'main',
   sources: src_files,
   include_directories: ['include/models', 'include/utils'],
-  dependencies: [opengl, glu, glut],
+  dependencies: [opengl, glu, glut, curl],
   install: false,
 )
