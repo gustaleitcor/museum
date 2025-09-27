@@ -862,3 +862,255 @@ Chosen: 2
 Chosen: 3
 Chosen: 8
 Chosen: 3
+URL: https://api.artsy.net/api/v1/artworks?page=301&size=12&sort=-iconicity
+QUANTIDADE DE IMAGENS: 12
+{"large":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/medium_rectangle.jpg","normalized":"{"large":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large.jpg","large_rectangle":"{https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large_rectangle.jpg","larger":""large":https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/larger.jpg"","medium":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/medium.jpg","https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large.jpg",medium_rectangle"":"large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/larger.jpg","https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/medium_rectangle.jpg{medium"":,"""largehttps://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/medium.jpg":"normalized,""medium_rectangle":"":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/normalized.jpg","https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/larger.jpgsmallhttps://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/medium_rectangle.jpg","normalized":"":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/normalized.jpg","small":"","https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/small.jpg",medium"":square"":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/square.jpg",https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/medium.jpg",""tall":"medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/tall.jpg"}
+https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/small.jpg","square":"
+https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/square.jpg","{"large":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/medium.jpg","medium_rectangle":"{https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/medium_rectangle.jpg","normalized":""large":https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/normalized.jpg"","small":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/larger.jpg","
+{https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/normalized.jpg"","{largesmall":"":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/small.jpg","https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large.jpgtall",""large_rectangle":"large":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/tall.jpg"}square
+":"{https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/square.jpg","tall":"{https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large_rectangle.jpg","largerlarge":"":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large.jpg","large_rectangle":"":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large.jpg"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/medium.jpg","https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/medium.jpgmedium_rectangle"":",medium"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/medium_rectangle.jpg","normalized":"large":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/normalized.jpg","small":""https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large.jpg",medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/small.jpg""large_rectangle,":"":square"":https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/medium_rectangle.jpg",https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large_rectangle.jpg",""larger":"large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/medium.jpg","medium_rectanglehttps://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/larger.jpg
+"":""https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/medium.jpg,""medium":,https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/medium_rectangle.jpg""",,https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/medium.jpg","""normalized":"medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/normalized.jpg","normalizedsmall":":"{https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/small.jpg""","https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/medium_rectangle.jpghttps://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/normalized.jpgmedium_rectanglesquare"":","small":""":https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/square.jpg""https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/small.jpg",,"square":"""tall":",largehttps://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/medium_rectangle.jpghttps://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/tall.jpg""}":",
+https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large.jpg"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/square.jpg"",normalized"","tall":"large_rectangle":"":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/tall.jpg"}
+https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large_rectangle.jpghttps://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/tall.jpg"}
+","largernormalized":":""https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/larger.jpghttps://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/normalized.jpg","",medium"":"small":"https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/medium.jpg",https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/small.jpg"","square":"medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/square.jpg","tallhttps://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/medium_rectangle.jpg":",""normalized":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/normalized.jpg","small":"
+https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/small.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/tall.jpg"}
+### LOAD 0 OK ###
+URL: https://api.artsy.net/api/v1/artworks?page=65&size=12&sort=-iconicity
+QUANTIDADE DE IMAGENS: 12
+{"large":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/medium_rectangle.jpg","normalized":"{"largehttps://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/normalized.jpg","small":":""https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large.jpg","https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/small.jpg","large_rectanglesquare":"":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/square.jpg","https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large_rectangle.jpgtall"":","larger":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/larger.jpg","medium":"
+https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/tall.jpg"}
+{"large":"{"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large.jpglarge":"","https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large.jpg",large_rectangle":""large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large_rectangle.jpg","https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large_rectangle.jpglarger","":"larger":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/medium.jpg",https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/medium_rectangle.jpg"","normalized":medium_rectangle"":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/normalized.jpg","small":https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/medium_rectangle.jpg"","normalized":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/normalized.jpg","https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/square.jpg",small":""tall":"{"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/tall.jpg"}large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/large_rectangle.jpg","larger":"{"large
+":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/tall.jpg"}
+https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/small.jpghttps://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/medium_rectangle.jpg","normalized":"","https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/normalized.jpg","small":"squarehttps://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/small.jpg":",""square":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/square.jpghttps://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/tall.jpg"",}"tall":
+"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/tall.jpg"}
+{"large":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/tall.jpg"}
+### LOAD 1 OK ###
+URL: https://api.artsy.net/api/v1/artworks?page=301&size=12&sort=-iconicity
+QUANTIDADE DE IMAGENS: 12
+{"large":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/fPr2GZTV5Qcp8a7VVvSoLg/large.jpg
+{"large":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/medium.jpg","medium_rectangle":"{"largehttps://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/medium_rectangle.jpg":"","normalized":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large_rectangle.jpg","https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/small.jpglarger"":","square":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/larger.jpg","medium":https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/square.jpg"","tall":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/medium_rectangle.jpg","
+normalized"https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/R0-U65xiYLC_Xj5WhDPn8Q/large.jpg
+{"large":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/ane4jEM7WyAoQwhNi2VNqQ/large.jpg
+{"large":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large.jpg","large_rectangle":"{https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/larger.jpg","medium":""https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/medium.jpg","medium_rectangle":"large":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large.jpg","https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/normalized.jpg","small":"large_rectangle":"{https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/square.jpg","tall":""https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/larger.jpg","largehttps://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/tall.jpg"":medium}"":"
+https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large.jpg","large_rectangle":""https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large.jpg"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/larger.jpg","medium":"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/iuJ4IJ1krXlW0gPPdsWpbg/large.jpg
+{"large":{""large":"https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large.jpg","https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large.jpglarge_rectangle":"",{https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large_rectangle.jpg","":larger":""https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/medium.jpghttps://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/normalized.jpghttps://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/medium.jpg""",,""medium_rectangle",""largemedium_rectangle{large_rectangle":"":":"""https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large_rectangle.jpg",":https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/medium_rectangle.jpg","normalizedsmall":"":""https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/small.jpg","https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/medium_rectangle.jpghttps://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/small.jpg"square,"square":""https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large.jpg"larger":",https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/square.jpg":"","large_rectangle"tall":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/square.jpg","":,"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/tall.jpg"normalized":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/larger.jpghttps://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large_rectangle.jpg","https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/normalized.jpg"}"",tall"
+":medium"":"https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large.jpg"
+https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/medium.jpg",Found main image URL: "https://d32dm0rphc51dk.cloudfront.net/xaEBESSp-5vO2MDUo1Qk2w/large.jpg"
+,"small":"medium_rectangle":""https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/small.jpg","https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/tall.jpgsquare"largerlargehttps://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/medium_rectangle.jpg":"","normalized":"":":https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/larger.jpghttps://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/normalized.jpg"""",,""https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/square.jpghttps://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large.jpg"small":","tall":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/small.jpg","https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/tall.jpgsquare":"}"}","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/square.jpg
+
+","tall":""https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/tall.jpgmedium"":"https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large.jpg"https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/medium.jpg
+",""{}
+Found main image URL: "https://d32dm0rphc51dk.cloudfront.net/93Kj4QOuZ9nUyB_jyf0JsA/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/PHqanNkImaZimhcxZfa3dQ/large.jpg
+"large":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large_rectangle.jpghttps://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large.jpg"",,""large_rectangle":https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large.jpgmedium_rectanglelarger"":"":
+"https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/medium_rectangle.jpg","normalized":"Found main image URL: https://d32dm0rphc51dk.cloudfront.net/sytYuy10OypEV0HjoWR9yw/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/larger.jpghttps://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/small.jpg",",""medium":tall":"""https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/tall.jpg"}https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/medium.jpg","
+https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large_rectangle.jpg"medium_rectanglehttps://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/1BbLUj7ZeBQ86UR6DbbsiA/large.jpg
+","larger":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/larger.jpg","medium":"":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/square.jpg",https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/square.jpg"tall":"","tall":"https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/tall.jpg"}
+https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/tall.jpg""https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/dA-nYETmdSzFj6wADiTAdQ/large.jpg
+}
+https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/medium.jpg","medium_rectangle":""https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large.jpg"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/normalized.jpg","small":"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/Fcp7kcR732W22SqGQqRN1A/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/BZhcwNpsMKThBeWczaQ8cA/large.jpg
+Image downloaded into RAM. Size: 14316 bytes
+Image downloaded into RAM. Size: 49960 bytes
+Image downloaded into RAM. Size: 102746 bytes
+Image downloaded into RAM. Size: 92769 bytes
+Image downloaded into RAM. Size: 113976 bytes
+Image downloaded into RAM. Size: 115033 bytes
+Image downloaded into RAM. Size: 205953 bytes
+Image downloaded into RAM. Size: 273085 bytes
+Image downloaded into RAM. Size: 207196 bytes
+Image downloaded into RAM. Size: 197283 bytes
+Image downloaded into RAM. Size: 270852 bytes
+Image downloaded into RAM. Size: 214636 bytes
+index: 0tamanho de images12
+W: 640
+H: 640
+W: 640
+H: 640
+index: 1tamanho de images12
+W: 533
+H: 640
+W: 533
+H: 640
+index: 2tamanho de images12
+W: 640
+H: 209
+W: 640
+H: 209
+index: 3tamanho de images12
+W: 560
+H: 640
+W: 560
+H: 640
+index: 4tamanho de images12
+W: 640
+H: 232
+W: 640
+H: 232
+index: 5tamanho de images12
+W: 520
+H: 640
+W: 520
+H: 640
+index: 6tamanho de images12
+W: 487
+H: 640
+W: 487
+H: 640
+index: 7tamanho de images12
+W: 478
+H: 640
+W: 478
+H: 640
+index: 8tamanho de images12
+W: 640
+H: 531
+W: 640
+H: 531
+index: 9tamanho de images12
+W: 640
+H: 478
+W: 640
+H: 478
+index: 10tamanho de images12
+W: 425
+H: 640
+W: 425
+H: 640
+index: 11tamanho de images12
+W: 421
+H: 640
+W: 421
+H: 640
+### LOAD 0 OK ###
+URL: https://api.artsy.net/api/v1/artworks?page=65&size=12&sort=-iconicity
+QUANTIDADE DE IMAGENS: 12
+{"large":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/medium_rectangle.jpg","normalized":"{"large":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large.jpg{"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/small.jpg,"","square":"large_rectangle":""https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large_rectangle.jpg","larger":"largehttps://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/medium_rectangle.jpg","normalized":"":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/small.jpg","square":https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large_rectangle.jpg",https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/tall.jpg"larger":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/medium_rectangle.jpg","normalized":""}https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/normalized.jpg","small":"
+https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/small.jpg"","square":"https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large.jpghttps://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/square.jpg"","tall":"
+https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/tall.jpgFound main image URL: "https://d32dm0rphc51dk.cloudfront.net/iwtGq0FcMChdmIORh2N8uA/large.jpg}
+
+{"large":""https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large.jpg"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large.jpg"
+{"large":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large_rectangle.jpg","larger":"Found main image URL: https://d32dm0rphc51dk.cloudfront.net/t0DLVkOBnRLUBNofDMveLw/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/larger.jpg","medium":"{"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/medium.jpg","medium_rectangle":"large_rectangle,":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/medium_rectangle.jpg"large_rectangle":"","normalized":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large_rectangle.jpg","larger":https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/normalized.jpg"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/larger.jpg","medium":"","small":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/medium_rectangle.jpg","https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/square.jpgnormalizedhttps://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/large_rectangle.jpg","larger":"":"https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/normalized.jpg","small",":https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/medium.jpg",""medium_rectangle"":""tall":"{https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/square.jpghttps://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/tall.jpg{"largehttps://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/medium_rectangle.jpg":""",}""",
+https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large.jpghttps://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/small.jpg"",,""large_rectangle"":https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/nBynJcZrJOxvNKjdLrR0tw/large.jpglarge
+normalized":":"""https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large.jpg",https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/normalized.jpgsquare"",":""https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large_rectangle.jpg","largerhttps://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/square.jpg":"small",":""tall":"https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/larger.jpghttps://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/tall.jpg""https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/small.jpg,}"","medium":""
+square"":"https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/3M1WTqp5qSsIWKWTQTIv8Q/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/medium.jpg{{","""{medium_rectanglehttps://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/square.jpg":"","largelargehttps://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/medium_rectangle.jpg":","normalized"":tall""":"large":https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large.jpghttps://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large.jpghttps://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/tall.jpg"}","large_rectangle":":
+"""https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large.jpg","large_rectangle":""https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/normalized.jpghttps://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large_rectangle.jpg",""largerhttps://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/large_rectangle.jpg,"":""
+","Found main image URL: https://d32dm0rphc51dk.cloudfront.net/HonaTUUvYdsWkN0lZDupoA/large_rectangle.jpg
+large_rectanglesmall":":""https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large_rectangle.jpg","https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/small.jpglarger","":square"":https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/larger.jpg""https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/larger.jpg,"","https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/larger.jpgmediummediumhttps://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/square.jpg":"","tall":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/medium.jpg":","https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/tall.jpg""}medium_rectanglehttps://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/medium.jpg{":
+"""https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large.jpg"
+"Found main image URL: https://d32dm0rphc51dk.cloudfront.net/vlYolsKd-1VoFTIrYTg_FQ/large.jpg
+,"medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/3yqSeatkRt1Fv62LnWaGNg/large.jpg
+tall":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/tall.jpghttps://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/medium_rectangle.jpg","normalized":""}https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/normalized.jpg","small":"
+https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/small.jpg"","square":"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large.jpg"
+"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/tall.jpg"}large_rectangle":,""largemedium":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large_rectangle.jpg","larger":Found main image URL: 
+"https://d32dm0rphc51dk.cloudfront.net/bschAYGzdk4RB82I3eBy3w/large.jpg"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large.jpg"
+Found main image URL: ":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large.jpg","large_rectangle":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large_rectangle.jpg","larger":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/CuH2YvK8rZ1eNaBYRidrew/large.jpg
+
+https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/QMeMQI3c8pcLvdazlyQ5Zw/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/larger.jpg","medium":"https://d32dm0rphc51dk.cloudfront.net/eaFc7fB38CDvnSIxnlS9NQ/large.jpg
+https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/medium.jpg","medium_rectangle":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/medium_rectangle.jpg","normalized":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/normalized.jpg","small":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/small.jpg","square":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/square.jpg","tall":"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/tall.jpg"}
+"https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large.jpg"
+Found main image URL: https://d32dm0rphc51dk.cloudfront.net/gxC5cqY2etJGykY4_PVmuA/large.jpg
+Image downloaded into RAM. Size: 23269 bytes
+Image downloaded into RAM. Size: 27197 bytes
+Image downloaded into RAM. Size: 55129 bytes
+Image downloaded into RAM. Size: 99424 bytes
+Image downloaded into RAM. Size: 99380 bytes
+Image downloaded into RAM. Size: 95704 bytes
+Image downloaded into RAM. Size: 101397 bytes
+Image downloaded into RAM. Size: 161653 bytes
+Image downloaded into RAM. Size: 185357 bytes
+Image downloaded into RAM. Size: 218328 bytes
+Image downloaded into RAM. Size: 207741 bytes
+Image downloaded into RAM. Size: 327840 bytes
+index: 0tamanho de images12
+W: 419
+H: 640
+W: 419
+H: 640
+index: 1tamanho de images12
+W: 445
+H: 297
+W: 445
+H: 297
+index: 2tamanho de images12
+W: 640
+H: 467
+W: 640
+H: 467
+index: 3tamanho de images12
+W: 640
+H: 558
+W: 640
+H: 558
+index: 4tamanho de images12
+W: 640
+H: 483
+W: 640
+H: 483
+index: 5tamanho de images12
+W: 640
+H: 483
+W: 640
+H: 483
+index: 6tamanho de images12
+W: 640
+H: 480
+W: 640
+H: 480
+index: 7tamanho de images12
+W: 422
+H: 640
+W: 422
+H: 640
+index: 8tamanho de images12
+W: 552
+H: 640
+W: 552
+H: 640
+index: 9tamanho de images12
+W: 640
+H: 526
+W: 640
+H: 526
+index: 10tamanho de images12
+W: 640
+H: 638
+W: 640
+H: 638
+index: 11tamanho de images12
+W: 640
+H: 640
+W: 640
+H: 640
+### LOAD 1 OK ###

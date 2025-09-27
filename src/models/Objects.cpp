@@ -6,7 +6,8 @@
 static std::shared_ptr<Game::State> gameState = Game::State::getInstance();
 
 void Models::Objects::drawLight(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-                                int lightName) {
+                                int lightName)
+{
   glEnable(lightName);
 
   GLfloat mat_specular[] = {1.0, 1.0, 1.0, 1.0};
@@ -37,7 +38,8 @@ void Models::Objects::drawLight(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glLightfv(lightName, GL_POSITION, light_position);
 }
 
-void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat x, GLfloat y, GLfloat z, GLuint texture) {
+void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat x, GLfloat y, GLfloat z, GLuint texture)
+{
 
   glColor3f(1.0f, 1.0f, 1.0f);
   glEnable(GL_TEXTURE_2D);
@@ -61,7 +63,8 @@ void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLflo
 // multiple quads
 void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
                                 GLfloat x, GLfloat y, GLfloat z,
-                                GLuint texture) {
+                                GLuint texture)
+{
   int nx = 20; // number of quads along x
   int ny = 20; // number of quads along y
   // glNormal3f(0, 1, 0);
@@ -72,8 +75,10 @@ void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   GLfloat dtx = 1.0f / nx;
   GLfloat dty = 1.0f / ny;
 
-  for (int i = 0; i < nx; i++) {
-    for (int j = 0; j < ny; j++) {
+  for (int i = 0; i < nx; i++)
+  {
+    for (int j = 0; j < ny; j++)
+    {
       GLfloat x1 = x_0 + i * dx;
       GLfloat y1 = y_0 + j * dy;
       GLfloat z1 = z_0 + j * dz;
@@ -108,11 +113,12 @@ void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
 }
 
 void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-                                GLfloat w, GLfloat h, GLuint texture_photo) {
+                                GLfloat w, GLfloat h, GLuint texture_photo)
+{
 
   glPushMatrix();
   glTranslatef(x_0, y_0, z_0);
-  float border_width = w*0.1;
+  float border_width = w * 0.1;
   float border_incline = 0.25;
   // Foto
   drawPlaneFlat(0, 0, 0, w, h, 0, texture_photo);
@@ -131,11 +137,11 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(-0.707*border_width, h, 0.707*border_width);
+  glVertex3f(-0.707 * border_width, h, 0.707 * border_width);
   glTexCoord2f(0.0f, 1.0f);
   glVertex3f(0, h, 0);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(0, h+border_width, border_incline);
+  glVertex3f(0, h + border_width, border_incline);
   glEnd();
   glDisable(GL_TEXTURE_2D);
 
@@ -149,11 +155,11 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glBindTexture(GL_TEXTURE_2D, gameState->texture(1));
   glBegin(GL_TRIANGLES);
   glTexCoord2f(0.0f, 0.0f);
-  glVertex3f(0.707*border_width, h, 0.707*border_width);
+  glVertex3f(0.707 * border_width, h, 0.707 * border_width);
   glTexCoord2f(0.0f, 1.0f);
   glVertex3f(0, h, 0);
   glTexCoord2f(1.0f, 1.0f);
-  glVertex3f(0, h+border_width, border_incline);
+  glVertex3f(0, h + border_width, border_incline);
   glEnd();
   glDisable(GL_TEXTURE_2D);
   glRotatef(-45, 0, 1, 0);
@@ -167,7 +173,7 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glTexCoord2f(0.0f, 0.0f);
   glVertex3f(0, -border_width, border_incline);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(-0.707*border_width, 0, 0.707*border_width);
+  glVertex3f(-0.707 * border_width, 0, 0.707 * border_width);
   glTexCoord2f(1.0f, 1.0f);
   glVertex3f(0, 0, 0);
   glEnd();
@@ -182,7 +188,7 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glTexCoord2f(0.0f, 0.0f);
   glVertex3f(0, -border_width, border_incline);
   glTexCoord2f(0.0f, 1.0f);
-  glVertex3f(0.707*border_width, 0,  0.707*border_width);
+  glVertex3f(0.707 * border_width, 0, 0.707 * border_width);
   glTexCoord2f(1.0f, 1.0f);
   glVertex3f(0, 0, 0);
   glEnd();
@@ -190,4 +196,62 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glPopMatrix();
 
   glPopMatrix();
+}
+
+void Models::Objects::drawBarrier(GLfloat x_0, GLfloat y_0, GLfloat z_0)
+{
+  GLfloat ctrlpoints[4][3] = {{1, 0.5, 0.0}, {1, 0.0, 0.0}, {0.0, 0.0, 0.0}, {0, 0.5, 0.0}};
+  int points = 50;
+  glPushMatrix();
+  glTranslatef(x_0, y_0, z_0);
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, gameState->texture(8));
+
+  // corda
+  glPushMatrix();
+  glScalef(ROOM_WIDTH/2, ROOM_HEIGHT/3, 1);
+  glLineWidth(10);
+  glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, &ctrlpoints[0][0]);
+  glColor3f(1.0, 0.0, 0.0);
+  glBegin(GL_LINE_STRIP);
+  for (int i = 0; i <= points; i++)
+  {
+    glEvalCoord1f((GLfloat)1.0 * i / points);
+  }
+  glEnd();
+  glPopMatrix();
+
+  GLUquadricObj *objCylinder = gluNewQuadric();
+  gluQuadricTexture ( objCylinder , GL_TRUE );
+  glColor3f(1.0, 215.0/255, 0.0);
+  // poste esquerdo
+  glPushMatrix();
+  
+  glTranslatef(0, ROOM_HEIGHT/6 - 0.5, 0);
+  glPushMatrix();
+  glRotatef(90.0, 1, 0, 0);
+  gluCylinder(objCylinder, 0.5, 0.5, ROOM_HEIGHT/3, 10, 5);  
+  glTranslatef(0, 0, ROOM_HEIGHT/3);
+  gluDisk(objCylinder, 0, 1.5, 15, 10); 
+  gluCylinder(objCylinder, 1.5, 1.5, 0.3, 15, 10);  
+  glPopMatrix();
+  gluSphere(objCylinder, 0.8, 30, 20);
+  glPopMatrix();
+
+  // poster direito
+  glPushMatrix();
+  glTranslatef(ROOM_WIDTH/2, ROOM_HEIGHT/6 - 0.5, 0);
+  glPushMatrix();
+  glRotatef(90.0, 1, 0, 0);
+  gluCylinder(objCylinder, 0.5, 0.5, ROOM_HEIGHT/3, 10, 5);  
+  glTranslatef(0, 0, ROOM_HEIGHT/3);
+  gluDisk(objCylinder, 0, 1.5, 15, 10); 
+  gluCylinder(objCylinder, 1.5, 1.5, 0.3, 15, 10);  
+  glPopMatrix();
+  gluSphere(objCylinder, 0.8, 30, 20);
+  glPopMatrix();
+
+  glPopMatrix();
+  glDisable(GL_TEXTURE_2D);
+  gluDeleteQuadric(objCylinder);
 }
