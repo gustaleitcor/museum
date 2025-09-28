@@ -8,20 +8,20 @@ Este projeto é um **simulador de museu 3D** desenvolvido em **C++** utilizando 
 
 ## 🔧 Instalação do Gerenciador de Pacotes (Meson)
 
-# Ubuntu/Debian:
+### Ubuntu/Debian:
 
 ```bash
 sudo apt update
 sudo apt install meson ninja-build libcurl4-openssl-dev
 ```
 
-# Fedora/RHEL/CentOS:
+### Fedora/RHEL/CentOS:
 
 ```bash
 sudo dnf install meson ninja-build libcurl-devel
 ```
 
-# macOS (via Homebrew):
+### macOS (via Homebrew):
 
 ```bash
 brew install meson ninja
@@ -29,26 +29,26 @@ brew install meson ninja
 
 ## 📦 Instalação das Dependências (libcurl)
 
-# Ubuntu/Debian:
+### Ubuntu/Debian:
 
 ```bash
 sudo apt update
 sudo apt install libcurl4-openssl-dev
 ```
 
-# Fedora/RHEL/CentOS:
+### Fedora/RHEL/CentOS:
 
 ```bash
 sudo dnf install libcurl-devel
 ```
 
-# macOS (via Homebrew):
+### macOS (via Homebrew):
 
 ```bash
 brew install curl
 ```
 
-# Fallback do Meson para _libcurl_
+### Fallback do Meson para _libcurl_
 
 Caso encontre dificuldades para instalar a biblioteca _libcurl_ através do gerenciador de pacotes do seu sistema operacional, utilize o Meson como solução alternativa. Dessa forma, siga para a próxima instrução.
 
