@@ -2,6 +2,7 @@
 
 #include "include/game/State.hpp"
 #include "include/utils/Vector3.hpp"
+#include "include/utils/EulerAngle.hpp"
 #include <GL/gl.h>
 #include <format>
 #include <memory>
@@ -14,23 +15,22 @@ public:
 
   inline const Utils::Vector3<GLfloat> &Pos() const { return m_pos; }
 
-  // Applies camera transformations.
+  // Aplica transformações da camera.
   void look();
-  // Updates player state.
+  // Atualiza o estado do jogador
   void update();
-  // Resets player position and orientation.
-  void reset();
 
 private:
-  // Updates front, up, and right vectors.
+  // Atualiza vetores front e right
   void updateVectors();
 
   Utils::Vector3<GLfloat> m_pos;
-  Utils::Vector3<GLfloat> m_front;
-  Utils::Vector3<GLfloat> m_up;
-  Utils::Vector3<GLfloat> m_right;
   Utils::Vector3<GLfloat> m_worldUp;
-  Utils::Vector3<GLfloat> m_viewAngle;
+
+  Utils::Vector3<GLfloat> m_front;
+  Utils::Vector3<GLfloat> m_right;
+
+  Utils::EulerAngle<GLfloat> m_viewAngle;
 
   GLfloat m_movementSpeed;
   GLfloat m_mouseSensitivity;

@@ -16,7 +16,7 @@
 // Namespace for key-related definitions.
 namespace Key
 {
-  // Enum to map GLUT special key codes.
+  // Enum para mapear GLUT special key codes.
   enum Special
   {
     F1 = GLUT_KEY_F1,
@@ -45,7 +45,7 @@ namespace Key
 
 struct Image
 {
-  GLuint id, w, h;
+  GLuint id_orig, id, w, h;
 };
 
 struct Vertice
@@ -55,25 +55,19 @@ struct Vertice
   Utils::Vector2<int> room_right;
 };
 
-// Namespace for game-related components.
 namespace Game
 {
-  // Manages global game state (input, window properties) as a Singleton.
+  // Gerencia o estado global do game (entrada, resolução e configurações) seguindo o padrão Singleton.
   class State
   {
   public:
-
-    Utils::Vector2<int> point_left;
-    Utils::Vector2<int> point_mid;
-    Utils::Vector2<int> point_right;
-
-    // Returns the singleton instance.
     static std::shared_ptr<State> getInstance()
     {
       static std::shared_ptr<State> instance{new State()};
       return instance;
     }
 
+    // Getters e Setters
     inline const Utils::Vector2<int> &mouseDelta() const { return m_mouseDelta; }
     inline Utils::Vector2<int> &mut_mouseDelta() { return m_mouseDelta; }
 
@@ -82,126 +76,108 @@ namespace Game
 
     inline const GLuint texture(int i) const { return m_texIds[i]; }
     inline const Image photo(int i) const { return i < HALL_LENGTH*4 ? m_photosInfo[i] : (Image){.id = m_texIds[3], .w = 693, .h = 858}; }
-    // Updates game state.
+    
+    inline const Utils::Vector2<int>& point_left() const { return m_point_left; }
+    inline const Utils::Vector2<int>& point_mid() const { return m_point_mid; }
+    inline const Utils::Vector2<int>& point_right() const { return m_point_right; }
+
+    inline Utils::Vector2<int> &mut_point_left() { return m_point_left; }
+    inline Utils::Vector2<int> &mut_point_mid() { return m_point_mid; }
+    inline Utils::Vector2<int> &mut_point_right() { return m_point_right; }
+
+    // Atualiza o estado do game
     void update();
-    // Resets game state.
+    // Reseta o estado do game
     void reset();
-    // Load texture
+    // Carrega texturas do ambiente
     void load_texture();
+    // Carrega texturas dinamicamente dos quadros
     void load_photos(bool side);
 
-    // Mouse button callback.
-    static void mouseCallback(int button, int state, int x, int y);
-    // Mouse motion callback.
+    // Callbacks de entrada
     static void mouseMotionCallback(GLint x, GLint y);
-    // ASCII key press callback.
     static void keyboardCallback(unsigned char key, int x, int y);
-    // ASCII key release callback.
     static void keyboardUpCallback(unsigned char key, int x, int y);
-    // Special key press callback.
     static void specialCallback(int key, int x, int y);
-    // Special key release callback.
     static void specialUpCallback(int key, int x, int y);
 
-    // Checks if ASCII key is pressed.
-    inline bool isKeyPressed(char key) const
-    {
-      return m_asciiKeys[static_cast<unsigned char>(key)];
-    }
+    // Funções de consulta de estado do game
+    inline const bool isKeyPressed(char key) const { return m_asciiKeys[static_cast<unsigned char>(key)]; }
+    inline const bool isSpecialPressed(Key::Special key) const { return m_specialKeys[key]; }
+    inline const uint random_number_left(int max) { return (gen_left() % (max + 1)); }
+    inline const int random_number_right(int max) { return (gen_right() % (max + 1));}
+    inline const Vertice get_neigh(int x, int z) { return neigh[x][z]; }
+    inline const bool checkpoint() { return m_checkpoint; }
 
-    // Checks if special key is pressed.
-    inline bool isSpecialPressed(Key::Special key) const
-    {
-      return m_specialKeys[key];
-    }
-    inline const uint random_number_left(int max)
-    {
-      return (gen_left() % (max + 1));
-    }
-    inline const int random_number_right(int max)
-    {
-      return (gen_right() % (max + 1));
-    }
-    inline const Vertice get_neigh(int x, int z)
-    {
-      return neigh[x][z];
-    }
+    // Funções de mudaça de estado do game
+    inline const void toggle() { m_checkpoint = !m_checkpoint; }
 
+    // Logica de atualização dos quadros via uma seed
     inline const void add_seed_left()
     {
+      const int qtd_images = 175;
       seed_left += 2;
-      if (seed_left > 18)
+      if (seed_left > (qtd_images/(2*HALL_LENGTH)) - 2){
         seed_left = 0;
-      std::cout << "seed esquerda soma " << seed_left << std::endl; 
+      }
     }
-
     inline const void add_seed_right()
     {
+      const int qtd_images = 175;
       seed_right += 2;
-      if (seed_right > 19)
+      if (seed_right > (qtd_images/(2*HALL_LENGTH)) - 1){
         seed_right = 1;
-      std::cout << "seed direita soma " << seed_right << std::endl; 
+      }
     }
-
     inline const void sub_seed_left()
     {
-      
-      if (seed_left <= 0)
+      if (seed_left <= 0){
         seed_left = 20;
+      }
       seed_left -= 2;
-      std::cout << "seed esquerda sub " << seed_left << std::endl; 
     }
-
     inline const void sub_seed_right()
     {
-      if (seed_right <= 1)
+      if (seed_right <= 1) {
         seed_right = 21;
+      }
       seed_right -= 2;
-      std::cout << "seed direita sub " << seed_right << std::endl; 
-    }
-
-
-    inline const bool checkpoint()
-    {
-      return m_checkpoint;
-    }
-
-    inline const void toggle()
-    {
-      m_checkpoint = !m_checkpoint;
     }
 
   private:
+    // Construtores padrão singleton
     State();
     State(const State &) = delete;
     State &operator=(const State &) = delete;
 
-    // escreve dados no vetor contents
+    // Funções para fazer download e salvamento das imagens
     static size_t memory_writeCb(void *contents, size_t size, size_t nmemb, void *userp);
     static size_t curl_imageCb(void *contents, size_t size, size_t nmemb, void *userp);
-    // realiza get e pega a string de resposta
     static bool http_get(const std::string &url, std::string &out);
-    // coloca a imagem em um vector
     static bool download_image(const std::string &url, std::vector<uint8_t> &buffer);
-    bool get_images(std::vector<std::vector<uint8_t>> &images_data, int random_page);
+    static bool get_images(std::vector<std::vector<uint8_t>> &images_data, int random_page);
 
+    // Variaveis para controle da aleatoriedade do jogo (lado do quadro)
     std::mt19937 gen_left, gen_right;
     uint seed_left = 0, seed_right = 1;
     bool m_checkpoint = false;
 
-    Utils::Vector2<int> m_mouseDelta;
-    // std::vector<Utils::Vector2<int>> points;
+    // Estrutura de dados para guardar as salas e seus respectivos vizinhos
     std::vector<std::vector<Vertice>> neigh;
+    Utils::Vector2<int> m_point_left;
+    Utils::Vector2<int> m_point_mid;
+    Utils::Vector2<int> m_point_right;
 
-
+    // Variaveis de controle de entrada do usuario
+    Utils::Vector2<int> m_mouseDelta;
     bool m_asciiKeys[256];
     bool m_specialKeys[256];
 
     Utils::Vector2<int> m_windowSize;
     bool m_isFullScreen;
 
+    // Vetor dos ID's da textura dos ambientes e dos quadros, respectivamente
     GLuint m_texIds[MAX_TEXTURES] = {0};
-    // TODO: DEFINE HALLWAY LENGTH
     Image m_photosInfo[HALL_LENGTH*4] = {0};
   };
 } // namespace Game

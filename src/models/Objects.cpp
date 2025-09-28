@@ -5,42 +5,10 @@
 
 static std::shared_ptr<Game::State> gameState = Game::State::getInstance();
 
-void Models::Objects::drawLight(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-                                int lightName)
-{
-  glEnable(lightName);
-
-  GLfloat mat_specular[] = {1.0, 1.0, 1.0, 1.0};
-  GLfloat mat_shininess[] = {50.0};
-
-  // glShadeModel(GL_SMOOTH);
-  glShadeModel(GL_FLAT);
-
-  glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
-  glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-
-  GLfloat light_ambient[] = {1.0, 1.0, 1.0, 1.0};
-  GLfloat light_diffuse[] = {1.0, 1.0, 1.0, 1.0};
-  GLfloat light_specular[] = {1.0, 1.0, 1.0, 1.0};
-  GLfloat light_position[] = {x_0, y_0, z_0, 1.0};
-
-  glPushMatrix();
-  glDisable(GL_LIGHTING);
-  glTranslatef(x_0, y_0, z_0);
-  glColor3f(1.0f, 1.0f, 0.0f);
-  glutWireCube(1.0f);
-  glEnable(GL_LIGHTING);
-  glPopMatrix();
-
-  glLightfv(lightName, GL_AMBIENT, light_ambient);
-  glLightfv(lightName, GL_DIFFUSE, light_diffuse);
-  glLightfv(lightName, GL_SPECULAR, light_specular);
-  glLightfv(lightName, GL_POSITION, light_position);
-}
-
+// Adiciona ao pipeline um plano
+// Posição (x_0, y_0, z_0) com tamanho (x, y, z) e id de textura ´texture´
 void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat x, GLfloat y, GLfloat z, GLuint texture)
 {
-
   glColor3f(1.0f, 1.0f, 1.0f);
   glEnable(GL_TEXTURE_2D);
   glBindTexture(GL_TEXTURE_2D, texture);
@@ -60,17 +28,15 @@ void Models::Objects::drawPlaneFlat(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLflo
   glDisable(GL_TEXTURE_2D);
 }
 
-// multiple quads
-void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
-                                GLfloat x, GLfloat y, GLfloat z,
-                                GLuint texture)
+// Adiciona ao pipeline um plano com varios poligonos 
+// Posição (x_0, y_0, z_0) com tamanho (x, y, z) e id de textura ´texture´
+void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0, GLfloat x, GLfloat y, GLfloat z, GLuint texture)
 {
-  int nx = 20; // number of quads along x
-  int ny = 20; // number of quads along y
-  // glNormal3f(0, 1, 0);
+  int nx = 20;
+  int ny = 20;
   GLfloat dx = x / nx;
   GLfloat dy = y / ny;
-  GLfloat dz = z / ny; // since z is coupled with y in your original code
+  GLfloat dz = z / ny;
 
   GLfloat dtx = 1.0f / nx;
   GLfloat dty = 1.0f / ny;
@@ -112,6 +78,8 @@ void Models::Objects::drawPlane(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   }
 }
 
+// Adiociona ao pipeline um quadro
+// Posição (x_0, y_0, z_0) com tamanho (w, h) e id de textura ´texture_photo´
 void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
                                 GLfloat w, GLfloat h, GLuint texture_photo)
 {
@@ -198,6 +166,8 @@ void Models::Objects::drawFrame(GLfloat x_0, GLfloat y_0, GLfloat z_0,
   glPopMatrix();
 }
 
+// Adiociona ao pipeline uma barreira
+// Posição (x_0, y_0, z_0)
 void Models::Objects::drawBarrier(GLfloat x_0, GLfloat y_0, GLfloat z_0)
 {
   GLfloat ctrlpoints[4][3] = {{1, 0.5, 0.0}, {1, 0.0, 0.0}, {0.0, 0.0, 0.0}, {0, 0.5, 0.0}};
