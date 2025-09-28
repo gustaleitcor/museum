@@ -4,7 +4,7 @@ project('opengl-app', 'cpp', version: '0.1', default_options: ['cpp_std=c++23', 
 opengl = dependency('gl')
 glu = dependency('glu')
 glut = dependency('glut')
-curl = dependency('libcurl', required:true)
+curl = dependency('libcurl', fallback: ['curl'])
 
 subdir('src')
 

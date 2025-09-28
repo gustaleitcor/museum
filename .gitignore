@@ -41,3 +41,6 @@
 *.dwo
 
 .cache
+.vscode
+subprojects/curl-8.10.1
+subprojects/packagecache
