@@ -6,7 +6,6 @@
 #include <cstdlib>
 #include <memory>
 #include <iostream>
-#include <print>
 
 using namespace Models::Objects;
 static std::shared_ptr<Game::State> gameState = Game::State::getInstance();

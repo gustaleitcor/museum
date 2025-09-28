@@ -8,7 +8,6 @@
 #include <GL/glut.h>
 #include <memory>
 #include <iostream>
-#include <print>
 
 static std::shared_ptr<Game::State> gameState = Game::State::getInstance();
 static Models::Player player;
